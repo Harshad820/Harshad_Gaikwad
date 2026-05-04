@@ -1,5 +1,5 @@
-# Harshad_Gaikwad
-“Built to showcase my skills, projects, and overall journey as a data analyst.”
+
+## “Built to showcase my skills, projects, and overall journey as a data analyst.”
 # 🌐 Harshad Gaikwad – Portfolio
 
 Welcome to my personal portfolio website! 🚀
