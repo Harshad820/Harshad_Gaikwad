@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshad Gaikwad - Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+
+
+<script>
+// Mobile menu toggle
+function toggleMenu() {
+    document.querySelector('.navbar-menu').classList.toggle('active');
+}
+
+function closeMenu() {
+    document.querySelector('.navbar-menu').classList.remove('active');
+}
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        closeMenu();
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+<style>
+    
+.underline {
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(244, 244, 125) 20%,rgb(238, 238, 36) 50%, #ffbd39 100%);
+    margin-top: 5px;
+    opacity: 50%; }
+.sunderline {
+    width: 25%;
+    height: 4px;
+    margin-left: 37.5%;
+    background-image: linear-gradient(to right, rgba(242, 187, 187, 0.849) 0%, rgb(242, 239, 74) 20%,rgb(20, 152, 240) 50%, #f41a37 100%);
+    margin-top: 5px;
+    opacity: 50%; }
+body {
+    background-color: #333333; /* Deep Purple */
+    color: #E0E0E0; /* Light Gray for text */
+}
+
+.navbar {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    display:flexbox;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+
+}
+.nav-bar li {
+    margin: 0 15px;
+}
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+.nav-bar a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+.profile-pic {
+    border-radius: 50%;
+    width: 400px; /* Increase size */
+    height: 430px; /* Increase size */
+    border: 3px solid #444; /* Add border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    margin-right: 10px;
+    margin-left: 50px;
+}
+.header {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; /* More space below header */
+}
+.header-text h1 {
+    text-align:right;
+  font-size: 2.50em; /* Increase font size for header */
+   width: 650px;;
+   margin-bottom: auto;
+   font-weight: bold;
+}
+
+.header-text p {
+    text-align:left;
+    margin-top:auto;
+    margin-left:4.5em;
+    margin-bottom:2em;
+    font-size:1.7em; /* Adjust font size for subtext */
+    color: #fffdfd;
+}
+
+h1 {
+    font-size:1.7em;
+    color: #FFD700; /* Bright Yellow for main header */
+}
+.buttons {
+    margin-left: 8em;
+    margin-top: 20px;
+}
+.hire-me, .download-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ffcc00;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hire-me:hover, .download-cv:hover {
+    background-color: #FF8C00; /* Darker gold */
+}
+
+
+
+
+.resume-section{
+    margin-top:5em;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 9em;
+}
+.resume-section h1,
+.row h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.edu{    margin-top:3em;
+    margin-bottom: 2em;   
+}
+.edu1{
+    margin-bottom: 2em;   
+}
+.date{
+    font-size: larger;
+    color:#FFA500;
+}
+.resume-wrapftco-animate {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    background-color: #41404072;
+    color: #d3c2c2;
+    box-shadow: 0 4px 8px rgba(221, 214, 214, 0.1);
+    height:10em;
+  }
+</style>
+
+
+
+<body style="background-color:linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)">
+<div class="ftco-section ftco-no-pb" style="margin-bottom: 7em;" id="home">
+<!-- FIXED NAVBAR - WORKING ON DESKTOP -->
+<nav class="navbar-custom fixed-top">
+    <div class="navbar-container">
+        <!-- NAME ON LEFT -->
+        <a href="#home-section" class="navbar-brand-custom">
+            Harshad Gaikwad
+        </a>
+        
+        <!-- MOBILE MENU BUTTON -->
+        <button class="navbar-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- MENU ON RIGHT -->
+        <ul class="navbar-menu">
+            <li><a href="#home-section" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about-section" onclick="closeMenu()">About</a></li>
+            <li><a href="#skills-section" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#project-section" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#profile-resume-section" onclick="closeMenu()">Resume</a></li>
+            <li><a href="#contact-section" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+<!-- ABOUT SECTION - REDUCED SPACING -->
+<section class="about-hero-section" id="home-section">
+    <div class="about-container">
+        <!-- LEFT SIDE: Text -->
+        <div class="text-left-side">
+            <h3>Hello!</h3>
+            <h1>I'm <samp>Harshad Gaikwad</samp></h1>
+            <p class="role">Data Analyst</p>
+            <p class="active-learner">Active Learner</p>
+            <div class="hero-buttons">
+                <a href="mailto:harshadgaikwad3730@gmail.com" class="btn-primary">HIRE ME</a>
+                <a href="HARSHAD_GAIKWAD.pdf" class="btn-secondary" download>DOWNLOAD CV</a>
+            </div>
+        </div>
+        
+        <!-- RIGHT SIDE: LARGER Image -->
+        <div class="image-right-side">
+            <img src="img4.png" alt="Harshad Gaikwad" class="hero-profile-img">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- UPDATED HTML -->
+<section class="about-section" id="about-section">
+    <div class="container">
+        <div class="about-content text-center">
+            <h2 class="section-title">About Me</h2>
+            
+            <p class="about-text">
+                I am a detail-oriented data analytics enthusiast with strong problem-solving skills and a passion for transforming raw data into meaningful insights. I specialize in Python, SQL, Excel, Power BI, and Tableau, and enjoy working on real-world datasets to support smart business decisions.
+            </p>
+
+            <div class="about-info">
+                <div><strong>Profile:</strong> Data Analyst & Business Intelligence Developer</div>
+                <div><strong>Domain:</strong> Data Analytics</div>
+                <div><strong>Education:</strong> Bachelor's of Computer Application</div>
+                <div><strong>Languages:</strong> Marathi, English, Hindi</div>
+                <div><strong>Skills:</strong> Python, SQL, Excel, Power BI, Tableau, Statistics</div>
+                <div><strong>Interests:</strong> Data Visualization, Business Insights, Research, Traveling</div>
+            </div>
+      
+            <div class="about-footer">
+                <div class="project-inline">
+                    <span class="project-count">20+</span>
+                    <span class="projects-text">Projects Completed</span>
+                </div>
+                <a href="https://www.linkedin.com/in/harshad-gaikwad-6382b6276/" class="btn btn-primary">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SKILLS SECTION - FIXED WIDTH + TABLEAU -->
+<section id="skills-section" class="skills-section">
+  <div class="container">
+    <div class="section-title">
+       <h2>Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+      
+      <!-- TOP ROW: 2 Rectangles -->
+      <div class="skill-rect-group">
+        <!-- Rectangle 1: Programming & DB -->
+        <div class="skill-rect">
+          <h4>Programming & DB</h4> <!-- NO ICON -->
+          <div class="skill-tags">
+            <span>🐍 Python</span>
+            <span>💾 SQL</span>
+            <span>🗄️ PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Rectangle 2: Data & Libraries -->
+        <div class="skill-rect">
+          <h4>Data & Libraries</h4> <!-- NO ICON -->
+          <div class="skill-tags">
+            <span>📊 Pandas</span>
+            <span>🔢 NumPy</span>
+            <span>🧠 Scikit-learn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM ROW: 1 Rectangle - SAME WIDTH -->
+      <div class="skill-rect-group">
+        <div class="skill-rect full-width"> <!-- REMOVED max-width override -->
+          <h4>Data Vis & Tools</h4> <!-- NO ICON -->
+          <div class="skill-tags">
+            <span>📈 Power BI</span>
+            <span>📱 Excel</span>
+            <span>💻 Jupyter</span>
+            <span>📊 Tableau</span> <!-- ADDED TABLEAU -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- PROJECTS SECTION - REDUCED HEIGHT + SINGLE BUTTON -->
+<section class="projects-section" id="project-section">
+  <div class="container">
+    
+    <!-- Heading -->
+    <div class="section-title">
+      <h2>Projects</h2>
+      <p>Below are some sample projects.</p>
+    </div>
+
+    <!-- Projects Grid - 2 PER ROW -->
+    <div class="projects-grid">
+      
+      <!-- ROW 1 -->
+      <div class="project-row">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <a href="https://github.com/Harshad820/logistics-operations-powerbi-dashboard" target="_blank">
+            <div class="project-img" style="background-image: url('images/project_banner_1.png');"></div>
+          </a>
+          <div class="project-content">
+            <h5>Logistics Operations Power BI Dashboard</h5>
+            <p>Analyzed logistics datasets using Power BI to track order volume, delivery performance, and operational efficiency. Evaluated driver productivity, route trends, and fleet utilization to identify bottlenecks. Built interactive dashboards with KPIs that improved reporting speed and decision-making accuracy.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <a href="https://github.com/Harshad820/Global_Superstore_Insights" target="_blank">
+            <div class="project-img" style="background-image: url('images/project_banner_2.png');"></div>
+          </a>
+          <div class="project-content">
+            <h5>Global Superstore Insights</h5>
+            <p>Performed end-to-end retail analytics using Power BI with star schema modeling and DAX measures. Analyzed sales, profit margins, customer segments, and regional performance across multiple categories. Designed interactive dashboards with drill-through insights and root-cause profit analysis.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="project-row">
+        <!-- Project 3 -->
+        <div class="project-card">
+          <a href="https://github.com/Harshad820/global_road_accident_analysis" target="_blank">
+            <div class="project-img" style="background-image: url('images/project_banner_3.png');"></div>
+          </a>
+          <div class="project-content">
+            <h5>Global Road Accident Analysis</h5>
+            <p>Examined global road accident datasets using Tableau to uncover yearly trends, high-risk regions, and major accident causes. Compared severity patterns across countries and demographic factors. Created visual dashboards to support data-driven road safety awareness and policy insights.</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <a href="https://github.com/Harshad820/Product_Sales_and_Orders" target="_blank">
+            <div class="project-img" style="background-image: url('images/project_banner_4.png');"></div>
+          </a>
+          <div class="project-content">
+            <h5>Product Sales and Orders (SQL Analytics)</h5>
+            <p>Used SQL to analyze customer transactions, product demand, and revenue trends from business sales data. Identified top-performing products, repeat customers, and seasonal purchasing patterns using advanced queries. Generated actionable insights to improve inventory planning and sales strategy.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SINGLE GITHUB BUTTON BELOW -->
+    <div class="projects-footer">
+      <div class="see-more">
+        <a href="https://github.com/Harshad820/?tab=repositories" target="_blank" class="btn-github-large">
+          <i class="fab fa-github"></i> See More Projects
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- ===== EDUCATION SECTION ===== -->
+<section class="profile-timeline-section" id="profile-resume-section">
+  <div class="container profile-timeline-container">
+    <!-- Title at TOP center -->
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-8 text-center">
+        <h1 class="profile-section-title">Education</h1>
+      </div>
+    </div>
+    
+    <!-- Content LEFT aligned (Original Layout) -->
+    <div class="row">
+      <div class="col-lg-8 col-md-10 offset-lg-2 offset-md-1">
+        <div class="profile-timeline">
+          <div class="profile-timeline-item">
+            <span class="profile-date">2025 - PRESENT</span>
+            <h4>Master of Computer Applications</h4>
+            <p class="profile-institution">D. Y. Patil Institute of Master of Computer Applications and Management, Akurdi, Pune.</p>
+          </div>
+          <div class="profile-timeline-item">
+            <span class="profile-date">2022 - 2025</span>
+            <h4>Bachelor of Computer Science</h4>
+            <p class="profile-institution">Dr. Arvind B. Telang Senior College of Arts,Science and Commerce, Nigdi, Pune.<br><strong>CGPA - 9.09</strong></p>
+          </div>
+        </div>
+        
+        <div class="text-start mt-5">
+          <a href="HARSHAD_GAIKWAD.pdf" class="profile-cv-btn">DOWNLOAD FULL CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--CONATCT SECTION-->
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <!-- Contact Title - NO TOP GAP -->
+    <div class="row justify-content-center mb-3 pb-2">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2 class="mb-2">Contact Me</h2>
+      </div>
+    </div>
+
+    <!-- Contact Info Boxes -->
+    <div class="row d-flex contact-info mb-4">
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3 class="mb-4">Address</h3>
+          <p>Pune, India</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3 class="mb-4">Contact Number</h3>
+          <p><a href="tel:+918208110092">+91-8208110092</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3 class="mb-4">Email Address</h3>
+          <p><a href="mailto:harshadgaikwad3730@gmail.com">harshadgaikwad3730@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <i class="fas fa-file-download"></i>
+          </div>
+          <h3 class="mb-4">Download Resume</h3>
+          <p><a href="HARSHAD_GAIKWAD.pdf">Resume link</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Have a Question - NO TOP GAP -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-7 ftco-animate text-center">
+        <h2>Have a <span>Question?</span> 
+          <a href="" class="btn btn-primary py-3 px-5">Click Here</a>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Social Icons Line - NO TOP GAP -->
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+          <li class="ftco-animate normal-txt">Find me on:</li>
+          <li class="ftco-animate">
+            <a href="https://www.linkedin.com/in/harshad-gaikwad-6382b6276/
+" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>  
+          <li class="ftco-animate">
+            <a href="https://github.com/Harshad820/" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="ftco-animate">
+            <a href="https://www.instagram.com/harshad_gaikwad_3730/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER SECTION-->
+<footer class="footer">
+  <div class="container text-center">
+    <p>
+      © <span id="year"></span> Harshad Gaikwad. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
