@@ -5,7 +5,7 @@
 Welcome to my personal portfolio website! 🚀
 This portfolio is built to showcase my skills, projects, and journey as a Data Analyst.
 
-🔗 **Live Portfolio:** https://yourusername.github.io/portfolio-website/
+🔗 **Live Portfolio:** https://harshad-gaikwad.vercel.app/
 
 ---
 
