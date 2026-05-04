@@ -42,7 +42,7 @@ I have hands-on experience in data cleaning, exploratory data analysis (EDA), an
 ## 📫 Contact
 
 * 📧 Email: [harshadgaikwad3730@gmail.com](mailto:harshadgaikwad3730@gmail.com)
-* 🔗 LinkedIn: [https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/harshad-gaikwad-6382b6276/)
+* 🔗 LinkedIn: https://www.linkedin.com/in/harshad-gaikwad-6382b6276/
 * 💻 GitHub: https://github.com/Harshad820/
 
 
